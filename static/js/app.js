@@ -1,3 +1,7 @@
+d3.json("/samples.json").then(function(data) {
+    console.log(data);
+});
+
 function init() {
     data = [{
         x: [1,2,3,4,5],
@@ -12,7 +16,7 @@ function unpack(rows, index) {
       return row[index];
     });
   };
-d3.json("/samples.json").then(function(data) {
+d3.json("samples.json").then(function(data) {
     console.log(data);
     let test = data.samples
     console.log(test);
